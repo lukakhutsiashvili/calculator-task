@@ -1,8 +1,16 @@
 # Calculator Test Automation
 
-This project automates testing for the `Calculator` library using **JUnit 5**. It covers basic operations like addition, subtraction, multiplication, and division, as well as advanced functions like powers and trigonometric operations.
+This project automates testing for the `Calculator` library using **JUnit 5**. It covers basic operations (addition, subtraction, multiplication, division) and advanced functions (power, trigonometric operations).
 
-**Note**: The `calculator-1.0.jar` file is included in this repository for simplicity and ease of practice. While it's generally not recommended to include JAR files in a Git repository, it has been added here for the purpose of completing this task.
+**Note**: The `calculator-1.0.jar` file is included for simplicity in this task. While generally not recommended, it has been added here for practice purposes.
+
+---
+
+## Key Features
+
+- **Parameterized Tests**: The **`CalculatorMultiplicationTest.java`** class demonstrates a **data-driven approach** using parameterized tests with `@ParameterizedTest` and `@CsvSource`.
+  
+- **Parallel Execution**: Tests are configured to run in parallel for faster execution. This is handled through the `junit-platform.properties` configuration, enabling parallel execution of tests.
 
 ---
 
@@ -11,4 +19,16 @@ This project automates testing for the `Calculator` library using **JUnit 5**. I
 ### Prerequisites
 - **Java 11+**
 - **JUnit 5**
-- **Maven** for dependency management
+- **Maven**
+
+### Installation
+1. Clone the repository.
+2. Install dependencies using Maven.
+
+---
+
+## Running Tests
+
+To execute all the tests, run the following command:
+```bash
+mvn test
